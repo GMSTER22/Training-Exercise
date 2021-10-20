@@ -1,0 +1,70 @@
+*, 
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #efefef;
+    color: white;
+    font-size: 2rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* grid-template-rows: auto 1fr auto; */
+    align-content: center;
+    gap: 2.5rem;
+    background-color: slategray;
+    max-width: 100rem;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.container > div {
+    border: .4rem solid red;
+    border-radius: .6rem;
+    height: 75vh;
+}
+
+.first {
+    /* background-color: springgreen; */
+    /* border: .4rem solid red; */
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.second {
+    /* background-color: #020202; */
+    grid-column: 5/13;
+}
+
+.third {
+    /* background-color: peru; */
+    grid: 1/3/2/4;
+}
+
+/* .fourth {
+    background-color: red;
+    grid: 1/1/2/2;
+}
+
+.fifth {
+    background-color: blue;
+    grid: 1/1/2/2;
+}
+
+.sixth {
+    background-color: rgb(241, 229, 55);
+    grid: 2/3/3/4;
+} */
