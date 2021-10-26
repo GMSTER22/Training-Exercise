@@ -21,7 +21,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: auto auto 1fr auto;
+    grid-template-rows: minmax(min-content, max-content) min-content 80% auto;
     grid-template-areas: 
                         "header header"
                         "navigation navigation"
@@ -30,7 +30,7 @@ body {
     align-content: center;
     gap: 1rem;
     background-color: slategray;
-    max-width: 100%;
+    /* max-width: 100%; */
     height: 100vh;
     padding: 1rem;
 }
@@ -41,7 +41,7 @@ body {
 }
 
 .first {
-    color: white;
+    background-color: orange;
     grid-area: header;
 }
 
