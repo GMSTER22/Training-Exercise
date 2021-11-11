@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fizzbuzz</title>
+
+    <style>
+        *,
+        *::after,
+        *::before {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <label for="number">Enter a number</label>
+    <input type="number" name="number" id="number">
+    <input type="submit" value="submit" id="submit">
+    
+
+    <script>
+        const submitted = document.querySelector("#submit");
+
+        submitted.addEventListener("click", ()=> {
+            let input = Math.ceil(submitted.previousElementSibling.value);
+
+            if (input > 100) {
+                console.log(input)
+                alert("Enter a number between 1 and 100")
+            } else {
+                if ( input%5 === 0  && input%3 === 0) {
+                    console.log("FizzBuzz");
+                } else if ( input%5 === 0  && input%3 !== 0) {
+                    console.log("Buzz");
+                } else if (input % 3 === 0) {
+                    console.log("Fizz");
+                }
+                input = ""
+            }
+        })
+
+        
+    </script>
+</body>
+</html>
