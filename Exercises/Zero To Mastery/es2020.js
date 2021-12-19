@@ -32,9 +32,7 @@ let andrei_pokemon = {
     }
 }
 
-if (andrei_pokemon && andrei_pokemon.raichu && will_pokemon 
-    && will_pokemon.pikachu && will_pokemon.pikachu.friend 
-    && will_pokemon.pikachu.friend.charizard) {
+if (andrei_pokemon?.raichu && will_pokemon?.pikachu?.friend?.charizard) {
         console.log('fight!')
     } else {
         console.log('walk away...')
