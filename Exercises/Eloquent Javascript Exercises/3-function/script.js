@@ -19,3 +19,32 @@ function isEven(input) {
        return isEven(input - 2);
     }    
 }
+
+// Bean couting exercise
+
+function countBs(string) {
+    let count = 0;
+
+    for (let i = 0; i < string.length; i++) {
+
+        if ( string[i] === "B" ) {
+            count++;
+        }         
+    }
+
+    return count;
+}
+
+
+function countChar(string, target) {
+    let count = 0;
+
+    for (let i = 0; i < string.length; i++) {
+
+        if ( string[i] === target ) {
+            count++;
+        }         
+    }
+
+    return count;
+}
